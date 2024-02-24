@@ -49,7 +49,8 @@
             <p>Area (A) = w X I</p>
             <div class="flex">
               <!-- rectangle length -->
-              <input type="text" name="" id="rectangle-length" class="w-24 text-2xl p-2 rounded-sm" placeholder="Length"> 
+              <input type="text" name="" id="rectangle-length" class="w-24 text-2xl p-2 rounded-sm"
+                placeholder="Length">
               <span class="mr-4 ml-2">cm</span>
               <!-- rectangle width -->
               <input type="text" name="" id="rectangle-width" class="w-24 text-2xl p-2 rounded-sm" placeholder="width">
@@ -65,56 +66,77 @@
         </div>
         <!-- Parallelogram card -->
         <div class="card w-96 bg-base-100 shadow-xl">
-          <figure><img src="images/parallelogram.png"
-                  alt="Shoes" /></figure>
+          <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
           <div class="card-body">
-              <h2 class="card-title">Parallelogram!</h2>
-              <p class="text-3xl">Area (A) = b X h</p>
-              <div>
-                  <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="base"> 
-                  <span class="ml-2 mr-4">cm</span>
-                  <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="height">
-                  <span>cm</span>
-              </div>
-              <div>
-                  <p>Area: <span id="parallelogram-area"></span>cm <sup>2</sup></p>
-              </div>
-              <div class="card-actions justify-end">
-                  <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
-              </div>
+            <h2 class="card-title">Parallelogram!</h2>
+            <p class="text-3xl">Area (A) = b X h</p>
+            <div>
+              <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base"
+                placeholder="base">
+              <span class="ml-2 mr-4">cm</span>
+              <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height"
+                placeholder="height">
+              <span>cm</span>
+            </div>
+            <div>
+              <p>Area: <span id="parallelogram-area"></span>cm <sup>2</sup></p>
+            </div>
+            <div class="card-actions justify-end">
+              <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+            </div>
           </div>
-      </div>
-       <!-- Rhombus card -->
-       <div class="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="images/rhombus.png"
-                alt="Shoes" /></figure>
-        <div class="card-body">
+        </div>
+        <!-- Rhombus card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+          <div class="card-body">
             <h2 class="card-title">Rhombus!</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Calculate</button>
+              <button class="btn btn-primary w-full">Calculate</button>
             </div>
+          </div>
         </div>
-    </div>
-     <!-- Pentagon card -->
-     <div class="card w-96 bg-base-100 shadow-xl">
-      <figure><img src="/images/pentagon.png"
-              alt="Shoes" /></figure>
-      <div class="card-body">
-          <h2 class="card-title">Pentagon!</h2>
-          <p>Area = 0.5 * p * b</p>
-          <div class="flex gap-5">
-              <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="Peri">
+        <!-- Pentagon card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Pentagon!</h2>
+            <p>Area = 0.5 * p * b</p>
+            <div class="flex gap-5">
+              <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter"
+                placeholder="Peri">
               <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="apo">
-          </div>
-          <div>
+            </div>
+            <div>
               <p>Area: <span id="pentagon-area">0</span></p>
-          </div>
-          <div class="card-actions justify-end">
+            </div>
+            <div class="card-actions justify-end">
               <button onclick="calculatePentagonArea() " class="btn btn-primary w-full">Calculate</button>
+            </div>
           </div>
+        </div>
+        <!-- Ellipse card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Ellipse!</h2>
+            <p>Area = π * a * b</p>
+            <div class="flex gap-5">
+              <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius"
+                placeholder="major">
+              <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius"
+                placeholder="minor">
+            </div>
+            <div>
+              <p>Area: <span id="ellipse-area">0</span></p>
+            </div>
+            <div class="card-actions justify-end">
+              <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
       <!-- area calculation container -->
       <div class="w-96 border-2 border-gray-700 rounded-md">
         <h3 class="text-3xl text-center p-4">Area calculator</h3>
@@ -125,7 +147,8 @@
   <script src="scripts/rectangle-area.js"></script>
   <script src="scripts/parallelogram-area.js"></script>
   <script src="scripts/pentagon-area.js"></script>
-  
+  <script src="scripts/ellipse-area.js"></script>
+
 </body>
 
 </html>
